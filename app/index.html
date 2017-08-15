@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="340">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bank Anova Partenrs LLC</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="fontAwesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="js/kendoui/styles/kendo.common.min.css" />
+    <script src="js/kendoui/js/jquery.min.js"></script>
+    <script src="js/kendoui/js/kendo.all.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+      <header>
+        <ul>
+          <li id="title"><h3>Dashboard</h3></li>
+          <li><img src="img/bbn_bco.png" alt=""></li>
+          <li><img src="img/anova_bco.png" alt=""></li>
+        </ul>
+        <ul class="secondHead">
+          <li class="usercircle"><h5><a href="admin.html"><i class="fa fa-user-circle" aria-hidden="true"></i> My Account</a></h5></li>
+          <li class="notif">
+            <h5><i class="fa fa-envelope" aria-hidden="true"></i> Notifications</h5>
+            <div class="popup" id="notificationsContainer">
+              <div>
+                <span><title>Title Alert</title></span>
+                <span><p>Message Description</p></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </header>
+      <section class="col-container">
+        <div class="col"><!-- principal container -->
+          <h4>Monitoring CPU/MEMORY</h4>
+          <div class="col-container"><!-- first chart -->
+            <section class="col col-2">
+              <div class="demo-section k-content wide">
+                <div id="chartProcesor"></div>
+              </div>
+              <img src="img/chartAlert.png" alt="">
+            </section>
+            <section class="col col-2">
+              <div class="demo-section k-content wide">
+                <div id="chartMemory"></div>
+              </div>
+              <img src="img/chartAlert.png" alt="">
+            </section>
+          </div><!-- End first chart -->
+        </div><!-- End Principal Container -->
+
+        <div class="col"><!-- Log Container -->
+          <h4>Bluemix Logs</h4>
+          <div class="content">
+            <table>
+              <colgroup>
+                <col style="width: 30%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>IP address</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>00.000.00.00</td>
+                  <td>MM/DD/YYYY</td>
+                  <td>HH:MM:SS</td>
+                  <td>Status</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!-- end Log Container -->
+
+        <div class="col"><!-- Log Container -->
+          <h4>Aplicative Logs</h4>
+          <table>
+            <colgroup>
+              <col style="width: 30%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>IP address</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>00.000.00.00</td>
+                <td>MM/DD/YYYY</td>
+                <td>HH:MM:SS</td>
+                <td>Status</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </div><!-- end Principal Container -->
+
+    <script type="text/javascript" src="js/app.js">
+
+    </script>
+  </body>
+</html>

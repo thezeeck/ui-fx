@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $complement;
+  margin: 0;
+  font-family: $textFont-Light;
+
+  *{
+    box-sizing: border-box;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: "Avenir-Medium";
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+    padding: 0 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}

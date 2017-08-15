@@ -1,0 +1,43 @@
+.extendedCheckbox {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+
+    input {
+      display: none;
+
+      &:checked + .box {
+          background-color: $secondary;
+          border-color: $secondary;
+
+          &::before {
+            background-color: white;
+            transform: translate(12px);
+        }
+      }
+    }
+
+    .box {
+      display: inline-block;
+      width: 28px;
+      height: 16px;
+      background-color: $complement;
+      border: 1px solid $complement1;
+      border-radius: 8px;
+      position: relative;
+      transition: all .3s linear;
+
+      &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          display: block;
+          background-color: gray;
+          border-radius: 100%;
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          transition: all .3s linear;
+      }
+    }
+}

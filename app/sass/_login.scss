@@ -1,0 +1,84 @@
+#logIn {
+  max-width: 400px;
+  padding: 10px;
+  background-color: $complement;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: $secondary;
+
+  figure {
+    text-align: center;
+    margin-top: 0;
+    img{
+      width: 250px;
+    }
+  }
+
+  ul {
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+
+    input{
+      font-family: $textFont;
+      font-size: 12px;
+      border-radius: 3px;
+      border: 1px solid;
+      border-color: $secondary;
+      height: 24px;
+      width: 200px;
+      text-align: center;
+      margin: 10px;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba($secondary, .7);
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: rgba($secondary, .7);
+      }
+    }
+  }
+}
+
+.appContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100Vh;
+}
+
+.titleLogin {
+  font-family: $textFont;
+  font-weight: bold;
+  font-size: 20px;
+  color: $secondary;
+  text-align: center;
+}
+
+.textLogin {
+  font-family: $textFont;
+  font-size: 14px;
+  color: $secondary;
+  text-align: center;
+  margin: 10px 0;
+}
+
+button{
+  font-family: $textFont;
+  font-weight: bold;
+  font-size: 12px;
+  color: $complement;
+  border-radius: 3px;
+  border: 1px solid $secondary;
+  height: 24px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  padding: 2px 0;
+  background: $secondary;
+  display: inline-block;
+}
+
+a {
+  color: $complement1;
+}

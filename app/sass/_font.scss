@@ -1,0 +1,19 @@
+$fonts: 'Avenir-Roman', 'Avenir-HeavyOblique', 'Avenir-Book', 'Avenir-Medium', 'Avenir-Oblique', 'Avenir-Light',
+        'Avenir-Heavy', 'Avenir-LightOblique', 'Avenir-MediumOblique', 'Avenir-BlackOblique', 'Avenir-BookOblique', 'Avenir-Black';
+
+@mixin fontGenerator($font) {
+  @font-face {
+    font-family: $font ;
+    src: url('../fonts/#{$font}.eot');
+    src: url('../fonts/#{$font}.eot#iefix') format('embedded-opentype'),
+      url('../fonts/#{$font}.woff2') format('woff2'),
+      url('../fonts/#{$font}.woff') format('woff'),
+      url('../fonts/#{$font}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@each $font in $fonts {
+  @include fontGenerator($font);
+}

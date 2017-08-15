@@ -1,0 +1,29 @@
+.col-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 16px 8px 0;
+
+  .col {
+    width: calc(100% - 16px);
+    margin: 0 8px 16px;
+    border: 1px solid $secondary;
+    border-radius: 5px;
+    position: relative;
+
+    &.col-2 {
+      width: calc(50% - 16px);
+      position: relative;
+    }
+  }
+}
+
+.k-content + img {
+    position: absolute;
+    left: 46px;
+    top: 54px;
+    height: 55px;
+    width: calc(100% - 52px);
+    opacity: .15;
+    z-index: -1;
+}
