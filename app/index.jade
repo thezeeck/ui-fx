@@ -1,0 +1,57 @@
+doctype html
+html
+  include head.jade
+  include header.jade
+  body
+    div
+      section.col-container
+        div.col 
+        //principal container
+          h4 Monitoring CPU/MEMORY
+          div.col-container
+          // first chart
+            section.col.col-2
+              div.demo-section.k-content.wide
+                div#chartProcesor
+              img(src="img/chartAlert.png" alt="")
+            section.col.col-2
+              div.demo-section.k-content.wide
+                div#chartMemory
+              img(src="img/chartAlert.png" alt="")
+        div.col
+          h4 Bluemix Logs
+          div.content
+            table
+              colgroup
+                col(style="width: 30%")
+              thead
+                tr
+                  th IP address
+                  th Date
+                  th Time
+                  th Status
+              tbody
+                tr
+                  td 00.000.00.00
+                  td MM/DD/YYYY
+                  td HH:MM:SS
+                  td Status
+        div.col
+          h4 Aplicative Logs
+          div.content
+            table
+              colgroup
+                col(style="width: 30%")
+              thead
+                tr
+                  th IP address
+                  th Date
+                  th Time
+                  th Status
+              tbody>
+              tr
+                td 00.000.00.00
+                td MM/DD/YYYY
+                td HH:MM:SS
+                td Status
+    script(type="text/javascript" src="js/app.js")
