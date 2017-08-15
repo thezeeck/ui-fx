@@ -12,16 +12,14 @@ var gulp = require('gulp'),
       js: {
         main: './app/js/app.js',
         watch: './app/js/**/*.js',
-        ouput: './www/js',
-        controller: './app/controllers/*.js',
-        controllerOut: './www/controller'
+        ouput: './www/js'
       },
       jade: {
         main: './app/index.jade',
         watch: './app/**/*.jade',
         ouput: './www',
         views: './app/views/*.jade',
-        viewsOuput: './www/views'
+        viewsOuput: './www'
       }
     };
 
