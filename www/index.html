@@ -10,53 +10,50 @@
     <title>Bank Anova Partenrs LLC</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="fontAwesome/css/font-awesome.css">
-
-    <link rel="stylesheet" href="js/kendoui/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="js/kendoui/styles/kendo.common.min.css">
     <script src="js/kendoui/js/jquery.min.js"></script>
     <script src="js/kendoui/js/kendo.all.min.js"></script>
-
   </head>
+  <header>
+    <ul>
+      <li id="title">
+        <h3>Dashboard</h3>
+      </li>
+      <li><img src="img/bbn_bco.png" alt=""></li>
+      <li><img src="img/anova_bco.png" alt=""></li>
+    </ul>
+    <ul>.secondHead
+      <li>.usercircle
+        <h5><a>href="admin.html" <i aria-hidden="true" class="fa fa-user-circle">My Account</i></a></h5>
+      </li>
+      <li>.notif
+        <h5><i aria-hidden="true" class="fa fa-envelope">Notifications</i></h5>
+      </li>
+      <div id="notificationsContainer" class="popup">
+        <div><span>
+            <title>Title Alert</title></span><span>
+            <p>Message Description</p></span></div>
+      </div>
+    </ul>
+  </header>
   <body>
     <div>
-      <header>
-        <ul>
-          <li id="title"><h3>Dashboard</h3></li>
-          <li><img src="img/bbn_bco.png" alt=""></li>
-          <li><img src="img/anova_bco.png" alt=""></li>
-        </ul>
-        <ul class="secondHead">
-          <li class="usercircle"><h5><a href="admin.html"><i class="fa fa-user-circle" aria-hidden="true"></i> My Account</a></h5></li>
-          <li class="notif">
-            <h5><i class="fa fa-envelope" aria-hidden="true"></i> Notifications</h5>
-            <div class="popup" id="notificationsContainer">
-              <div>
-                <span><title>Title Alert</title></span>
-                <span><p>Message Description</p></span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </header>
       <section class="col-container">
-        <div class="col"><!-- principal container -->
-          <h4>Monitoring CPU/MEMORY</h4>
-          <div class="col-container"><!-- first chart -->
-            <section class="col col-2">
-              <div class="demo-section k-content wide">
-                <div id="chartProcesor"></div>
-              </div>
-              <img src="img/chartAlert.png" alt="">
-            </section>
-            <section class="col col-2">
-              <div class="demo-section k-content wide">
-                <div id="chartMemory"></div>
-              </div>
-              <img src="img/chartAlert.png" alt="">
-            </section>
-          </div><!-- End first chart -->
-        </div><!-- End Principal Container -->
-
-        <div class="col"><!-- Log Container -->
+        <div class="col"> </div>
+        <!--principal container
+        h4 Monitoring CPU/MEMORY
+        div.col-container
+        // first chart
+          section.col.col-2
+            div.demo-section.k-content.wide
+              div#chartProcesor
+            img(src="img/chartAlert.png" alt="")
+          section.col.col-2
+            div.demo-section.k-content.wide
+              div#chartMemory
+            img(src="img/chartAlert.png" alt="")
+        -->
+        <div class="col">
           <h4>Bluemix Logs</h4>
           <div class="content">
             <table>
@@ -81,38 +78,34 @@
               </tbody>
             </table>
           </div>
-        </div><!-- end Log Container -->
-
-        <div class="col"><!-- Log Container -->
+        </div>
+        <div class="col">
           <h4>Aplicative Logs</h4>
-          <table>
-            <colgroup>
-              <col style="width: 30%">
-            </colgroup>
-            <thead>
-              <tr>
-                <th>IP address</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
+          <div class="content">
+            <table>
+              <colgroup>
+                <col style="width: 30%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>IP address</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
               <tr>
                 <td>00.000.00.00</td>
                 <td>MM/DD/YYYY</td>
                 <td>HH:MM:SS</td>
                 <td>Status</td>
               </tr>
-            </tbody>
-          </table>
+            </table>
+          </div>
         </div>
-
       </section>
-    </div><!-- end Principal Container -->
-
-    <script type="text/javascript" src="js/app.js">
-
-    </script>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
