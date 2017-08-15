@@ -1,12 +1,6 @@
-'use strict';
+"use strict";
 
 $(function () {
-    $('.notif').on('click', function () {
-        $('#notificationsContainer').toggleClass('active');
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-        }
-    });
     // Charts:
     function createChart(newChart) {
         newChart.node.kendoChart({
@@ -52,36 +46,31 @@ $(function () {
         });
     }
 
-    $(document).ready(function () {
-        createChart({
-            title: "PC use in %",
-            data: [{
-                name: "Use",
-                data: [40, 50, 30, 80, 95, 20],
-                color: "#90E6D4"
-            }],
-            node: $('#chartProcesor')
-        });
-        createChart({
-            title: "MEMORY use in %",
-            data: [{
-                name: "Use",
-                data: [39, 54, 90, 60, 55, 10],
-                color: "#197C68"
-            }],
-            node: $('#chartMemory')
-        });
+    createChart({
+        title: "PC use in %",
+        data: [{
+            name: "Use",
+            data: [40, 50, 30, 80, 95, 20],
+            color: "#90E6D4"
+        }],
+        node: $('#chartProcesor')
     });
-    // end charts
 
-    // Speedometer:
+    createChart({
+        title: "MEMORY use in %",
+        data: [{
+            name: "Use",
+            data: [39, 54, 90, 60, 55, 10],
+            color: "#197C68"
+        }],
+        node: $('#chartMemory')
+    });
+
     function createGauge() {
         $("#gauge").kendoRadialGauge({
-
             pointer: {
                 value: $("#gauge-value").val()
             },
-
             scale: {
                 minorUnit: 5,
                 startAngle: -30,
@@ -91,26 +80,24 @@ $(function () {
         });
     }
 
-    $(document).ready(function () {
-        createGauge();
+    createGauge();
 
-        function updateValue() {
-            $("#gauge").data("kendoRadialGauge").value($("#gauge-value").val());
-        }
+    function updateValue() {
+        $("#gauge").data("kendoRadialGauge").value($("#gauge-value").val());
+    }
 
-        if (kendo.ui.Slider) {
-            $("#gauge-value").kendoSlider({
-                min: 0,
-                max: 180,
-                showButtons: false,
-                change: updateValue
-            });
-        } else {
-            $("#gauge-value").change(updateValue);
-        }
-
-        $(document).bind("kendo:skinChange", function (e) {
-            createGauge();
+    if (kendo.ui.Slider) {
+        $("#gauge-value").kendoSlider({
+            min: 0,
+            max: 180,
+            showButtons: false,
+            change: updateValue
         });
+    } else {
+        $("#gauge-value").change(updateValue);
+    }
+
+    $(document).bind("kendo:skinChange", function (e) {
+        createGauge();
     });
 });

@@ -39,20 +39,21 @@
   <body>
     <div>
       <section class="col-container">
-        <div class="col"> </div>
-        <!--principal container
-        h4 Monitoring CPU/MEMORY
-        div.col-container
-        // first chart
-          section.col.col-2
-            div.demo-section.k-content.wide
-              div#chartProcesor
-            img(src="img/chartAlert.png" alt="")
-          section.col.col-2
-            div.demo-section.k-content.wide
-              div#chartMemory
-            img(src="img/chartAlert.png" alt="")
-        -->
+        <div class="col"> 
+          <h4>Monitoring CPU/MEMORY</h4>
+          <div class="col-container">
+            <section class="col col-2">
+              <div class="demo-section k-content wide">
+                <div id="chartProcesor"></div>
+              </div><img src="img/chartAlert.png" alt="">
+            </section>
+            <section class="col col-2">
+              <div class="demo-section k-content wide">
+                <div id="chartMemory"></div>
+              </div><img src="img/chartAlert.png" alt="">
+            </section>
+          </div>
+        </div>
         <div class="col">
           <h4>Bluemix Logs</h4>
           <div class="content">
