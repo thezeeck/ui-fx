@@ -4,7 +4,7 @@ html
   body
     div
       include ../jade/header.jade
-      section.content-area
+      section#adminProfile.content-area
         h1 Profile
         form.form-responsive
           ul.col.no-border
@@ -36,6 +36,15 @@ html
             li.hidden-password
               label Confirm password
               input(type="password" placeholder="******")
+            li.col-container
+              h2.col.no-border Notifications
+              dl.col.no-border.config-alert
+                dt CPU Alert
+                dd
+                  input(type="range" min="0" max="100" step="5")
+                dt Memory Alert
+                dd
+                  input(type="range" min="0" max="100" step="5")
           .button-area.col.no-border
             button.primary Save
     script(type="text/javascript" src="js/app.js")

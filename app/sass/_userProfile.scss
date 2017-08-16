@@ -31,3 +31,26 @@
     text-align: left;
   }
 }
+
+#adminProfile {
+
+  .form-responsive {
+
+    > ul li:last-child {
+      width: 100%;
+    }
+  }
+}
+
+.config-alert {
+  display: flex;
+
+  dt {
+    width: 20%;
+  }
+
+  dd {
+    width: 30%;
+    margin: 0;
+  }
+}

@@ -480,3 +480,14 @@ select {
     overflow: auto; }
   #newUser h2 {
     text-align: left; }
+
+#adminProfile .form-responsive > ul li:last-child {
+  width: 100%; }
+
+.config-alert {
+  display: flex; }
+  .config-alert dt {
+    width: 20%; }
+  .config-alert dd {
+    width: 30%;
+    margin: 0; }

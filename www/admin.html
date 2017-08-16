@@ -40,7 +40,7 @@
           </li>
         </ul>
       </header>
-      <section class="content-area">
+      <section id="adminProfile" class="content-area">
         <h1>Profile</h1>
         <form class="form-responsive">
           <ul class="col no-border">
@@ -80,6 +80,19 @@
             <li class="hidden-password">
               <label>Confirm password</label>
               <input type="password" placeholder="******">
+            </li>
+            <li class="col-container">
+              <h2 class="col no-border">Notifications</h2>
+              <dl class="col no-border config-alert">
+                <dt>CPU Alert</dt>
+                <dd>
+                  <input type="range" min="0" max="100" step="5">
+                </dd>
+                <dt>Memory Alert</dt>
+                <dd>
+                  <input type="range" min="0" max="100" step="5">
+                </dd>
+              </dl>
             </li>
           </ul>
           <div class="button-area col no-border">
