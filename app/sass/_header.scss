@@ -5,14 +5,14 @@ header {
   padding: 0 16px;
   background-color: #197C68;
 
-  ul {
+  > ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     align-self: stretch;
 
-    li {
+    > li {
       display: flex;
       align-items: center;
       color: white;
@@ -51,6 +51,17 @@ header {
   }
 
   .secondHead {
+
+    > li {
+      display: inline-block;
+      margin-right: 16px;
+
+      &:last-child {
+        margin: 0;
+        position: relative;
+      }
+    }
+
     h5 {
       width: 100%;
       color: white;
@@ -62,7 +73,7 @@ header {
       &:hover + #notificationsContainer {
           transform: translate(0px);
           opacity: 1;
-          padding: 8px;
+          padding: 16px 0;
           height: auto;
           overflow: visible;
       }
@@ -82,7 +93,7 @@ header {
     }
 
     #notificationsContainer {
-      background-color: #BFBFBF;
+      background-color: #fff;
       width: 100%;
       height: 0;
       position: absolute;
@@ -95,11 +106,14 @@ header {
       opacity: 0;
       overflow: hidden;
       line-height: 12px;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba($complement-darker, .3);
 
       &:hover{
         transform: translate(0px);
         opacity: 1;
-        padding: 8px;
+        padding: 16px 0px;
         height: auto;
         overflow: visible;
       }
@@ -112,13 +126,39 @@ header {
         height: 0;
         width: 0;
         border-width: 0 6px 6px 6px;
-        border-color: transparent transparent $complement1;
+        border-color: transparent transparent #fff;
         border-style: solid;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: gray;
+        line-height: 16px;
+        font-size: 14px;
+
+        li {
+          padding: 16px;
+          border-bottom: 1px solid #fff;
+
+          &:nth-child(2n) {
+            background-color: $complement;
+          }
+
+          &.new-notify {
+            background-color: rgba(0, 85, 227, .2);
+          }
+
+          > .fa {
+            margin-left: 8px;
+          }
+        }
       }
     }
   }
 
-  .notif .fa::after {
+  .notif > h5 .fa::after {
     content: "";
     position: absolute;
     left: -5px;

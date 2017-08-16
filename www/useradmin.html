@@ -33,9 +33,15 @@
               <li class="notif">
                 <h5><i class="fa fa-envelope"></i> Notifications</h5>
                 <div id="notificationsContainer" class="popup">
-                  <div><span>
-                      <title>Title Alert</title></span><span>
-                      <p>Message Description</p></span></div>
+                  <ul>
+                    <li class="new-notify"><span>CPU use 80%</span><i class="fa fa-trash"></i><i class="fa fa-eye"></i></li>
+                    <li class="new-notify"><span>Memory use 90%</span><i class="fa fa-trash"></i><i class="fa fa-eye"></i></li>
+                    <li class="new-notify"><span>CPU use 100%</span><i class="fa fa-trash"></i><i class="fa fa-eye"></i></li>
+                    <li class="new-notify"><span>CPU use 90%</span><i class="fa fa-trash"></i><i class="fa fa-eye"></i></li>
+                    <li><span>CPU use 80%</span><i class="fa fa-trash"></i><i class="fa fa-eye-slash"></i></li>
+                    <li><span>CPU use 85%</span><i class="fa fa-trash"></i><i class="fa fa-eye-slash"></i></li>
+                    <li><span>CPU use 100%</span><i class="fa fa-trash"></i><i class="fa fa-eye-slash"></i></li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -202,20 +208,20 @@
             <ul class="col no-border">
               <li>
                 <label>First Name</label>
-                <input type="text" value="Antonio">
+                <input type="text" value="" placeholder="First Name">
               </li>
               <li>
                 <label>Last Name</label>
-                <input type="text" value="Campa">
+                <input type="text" value="" placeholder="Last Name">
               </li>
               <li>
                 <label>e-Mail</label>
-                <input type="email" value="antonio.campa@example.com">
+                <input type="email" value="" placeholder="example@example.com">
               </li>
               <li>
                 <label>Title</label>
                 <select>
-                  <option disabled selceted>Select one</option>
+                  <option disabled selected>Select one</option>
                   <option>Ms.</option>
                   <option>Mrs.</option>
                   <option>Dr.</option>
@@ -226,17 +232,17 @@
                 <ul class="options">
                   <li>
                     <label class="extendedCheckbox">
-                      <input type="checkbox" name="displayDashboard" value=""><span class="box"></span><span>CPU Monitor</span>
+                      <input type="checkbox" name="displayDashboard" value="" checked><span class="box"></span><span>CPU Monitor</span>
                     </label>
                   </li>
                   <li>
                     <label class="extendedCheckbox">
-                      <input type="checkbox" name="displayDashboard" value=""><span class="box"></span><span>Bluemix logs</span>
+                      <input type="checkbox" name="displayDashboard" value="" checked><span class="box"></span><span>Bluemix logs</span>
                     </label>
                   </li>
                   <li>
                     <label class="extendedCheckbox">
-                      <input type="checkbox" name="displayDashboard" value=""><span class="box"></span><span>Applicative logs</span>
+                      <input type="checkbox" name="displayDashboard" value="" checked><span class="box"></span><span>Applicative logs</span>
                     </label>
                   </li>
                 </ul>

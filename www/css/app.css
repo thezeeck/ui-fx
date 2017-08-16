@@ -159,37 +159,43 @@ header {
   margin: 0;
   padding: 0 16px;
   background-color: #197C68; }
-  header ul {
+  header > ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     align-self: stretch; }
-    header ul li {
+    header > ul > li {
       display: flex;
       align-items: center;
       color: white; }
-      header ul li:first-child {
+      header > ul > li:first-child {
         max-width: 250px;
         color: white; }
-      header ul li:not(:first-child) {
+      header > ul > li:not(:first-child) {
         max-width: 250px;
         text-align: right;
         line-height: 0;
         padding-left: 16px; }
-      header ul li:last-child {
+      header > ul > li:last-child {
         display: flex;
         width: 100%;
         max-width: 100%;
         justify-content: flex-end; }
-      header ul li.notif {
+      header > ul > li.notif {
         max-width: 250px;
         position: relative; }
-      header ul li img {
+      header > ul > li img {
         width: 72px;
         height: auto;
         max-width: 100%;
         max-height: 100%; }
+  header .secondHead > li {
+    display: inline-block;
+    margin-right: 16px; }
+    header .secondHead > li:last-child {
+      margin: 0;
+      position: relative; }
   header .secondHead h5 {
     width: 100%;
     color: white;
@@ -200,7 +206,7 @@ header {
     header .secondHead h5:hover + #notificationsContainer {
       transform: translate(0px);
       opacity: 1;
-      padding: 8px;
+      padding: 16px 0;
       height: auto;
       overflow: visible; }
     header .secondHead h5 .usercircle
@@ -212,7 +218,7 @@ header {
     header .secondHead h5 .fa-envelope::before {
       content: "\f0e0"; }
   header .secondHead #notificationsContainer {
-    background-color: #BFBFBF;
+    background-color: #fff;
     width: 100%;
     height: 0;
     position: absolute;
@@ -224,11 +230,14 @@ header {
     transform: translate(0px, -20px);
     opacity: 0;
     overflow: hidden;
-    line-height: 12px; }
+    line-height: 12px;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(99, 99, 99, 0.3); }
     header .secondHead #notificationsContainer:hover {
       transform: translate(0px);
       opacity: 1;
-      padding: 8px;
+      padding: 16px 0px;
       height: auto;
       overflow: visible; }
     header .secondHead #notificationsContainer::before {
@@ -239,9 +248,25 @@ header {
       height: 0;
       width: 0;
       border-width: 0 6px 6px 6px;
-      border-color: transparent transparent #BFBFBF;
+      border-color: transparent transparent #fff;
       border-style: solid; }
-  header .notif .fa::after {
+    header .secondHead #notificationsContainer ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: gray;
+      line-height: 16px;
+      font-size: 14px; }
+      header .secondHead #notificationsContainer ul li {
+        padding: 16px;
+        border-bottom: 1px solid #fff; }
+        header .secondHead #notificationsContainer ul li:nth-child(2n) {
+          background-color: #F7F8F9; }
+        header .secondHead #notificationsContainer ul li.new-notify {
+          background-color: rgba(0, 85, 227, 0.2); }
+        header .secondHead #notificationsContainer ul li > .fa {
+          margin-left: 8px; }
+  header .notif > h5 .fa::after {
     content: "";
     position: absolute;
     left: -5px;
@@ -454,7 +479,7 @@ select {
   background-image: url("../img/chevron.png");
   border: 1px solid #DADBDF;
   border-radius: 5px;
-  padding: 3px 16px 5px;
+  padding: 3px 48px 5px 16px;
   font-size: 14px;
   line-height: 12px;
   background-size: 16px;
