@@ -1,45 +1,51 @@
 .extendedCheckbox {
-    position: relative;
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+
+  input {
+    display: none;
+
+    &:checked + .box {
+        background-color: $secondary;
+        border-color: $secondary;
+
+        &::before {
+          background-color: white;
+          transform: translate(12px);
+      }
+    }
+  }
+
+  .box {
     display: inline-block;
+    width: 28px;
+    height: 16px;
+    background-color: $complement;
+    border: 1px solid $complement1;
+    border-radius: 8px;
+    position: relative;
+    transition: all .3s linear;
     margin-right: 8px;
+    vertical-align: middle;
 
-    input {
-      display: none;
-
-      &:checked + .box {
-          background-color: $secondary;
-          border-color: $secondary;
-
-          &::before {
-            background-color: white;
-            transform: translate(12px);
-        }
-      }
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: gray;
+        border-radius: 100%;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        transition: all .3s linear;
     }
+  }
 
-    .box {
-      display: inline-block;
-      width: 28px;
-      height: 16px;
-      background-color: $complement;
-      border: 1px solid $complement1;
-      border-radius: 8px;
-      position: relative;
-      transition: all .3s linear;
-
-      &::before {
-          content: "";
-          width: 10px;
-          height: 10px;
-          display: block;
-          background-color: gray;
-          border-radius: 100%;
-          position: absolute;
-          left: 2px;
-          top: 2px;
-          transition: all .3s linear;
-      }
-    }
+  span {
+    vertical-align: middle;
+  }
 }
 
 button{
@@ -81,12 +87,18 @@ button{
         width: 33.333%;
       }
 
-      label {
+      label,
+      span {
         width: 40%;
       }
 
-      input {
+      input,
+      ul {
         width: 60%;
+
+        .extendedCheckbox {
+          width: 100%;
+        }
       }
     }
   }

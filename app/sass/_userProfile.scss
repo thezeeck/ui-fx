@@ -10,3 +10,24 @@
     opacity: 1;
   }
 }
+
+#newUser {
+  background-color: rgba($complement-darker, .05);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0;
+  transition: all .3s linear;
+  height: 0;
+  overflow: hidden;
+
+  &.active {
+    padding: 0 8px;
+    margin: 8px 16px;
+    height: auto;
+    overflow: auto;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}

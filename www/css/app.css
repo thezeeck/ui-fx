@@ -341,7 +341,8 @@ table {
 
 .options {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
   .options li:not(:last-child) {
     margin-bottom: 8px; }
 
@@ -365,7 +366,9 @@ table {
     border: 1px solid #BFBFBF;
     border-radius: 8px;
     position: relative;
-    transition: all .3s linear; }
+    transition: all .3s linear;
+    margin-right: 8px;
+    vertical-align: middle; }
     .extendedCheckbox .box::before {
       content: "";
       width: 10px;
@@ -377,6 +380,8 @@ table {
       left: 2px;
       top: 2px;
       transition: all .3s linear; }
+  .extendedCheckbox span {
+    vertical-align: middle; }
 
 button {
   color: #41769C;
@@ -411,10 +416,15 @@ button {
       @media (min-width: 1401px) {
         .form-responsive > ul > li {
           width: 33.333%; } }
-      .form-responsive > ul > li label {
+      .form-responsive > ul > li label,
+      .form-responsive > ul > li span {
         width: 40%; }
-      .form-responsive > ul > li input {
+      .form-responsive > ul > li input,
+      .form-responsive > ul > li ul {
         width: 60%; }
+        .form-responsive > ul > li input .extendedCheckbox,
+        .form-responsive > ul > li ul .extendedCheckbox {
+          width: 100%; }
 
 .button-area {
   text-align: right;
@@ -454,3 +464,19 @@ select {
     padding: 0 16px 16px;
     display: flex;
     opacity: 1; }
+
+#newUser {
+  background-color: rgba(99, 99, 99, 0.05);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0;
+  transition: all .3s linear;
+  height: 0;
+  overflow: hidden; }
+  #newUser.active {
+    padding: 0 8px;
+    margin: 8px 16px;
+    height: auto;
+    overflow: auto; }
+  #newUser h2 {
+    text-align: left; }

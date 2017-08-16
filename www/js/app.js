@@ -7,6 +7,15 @@ function adminForm() {
     });
 }
 
+function userAdmin() {
+    $('#addUser').on('click', function (e) {
+        e.preventDefault();
+        $('#newUser').toggleClass('active');
+        $('#addUser').toggleClass('hidden');
+        $('#saveUser').toggleClass('hidden');
+    });
+}
+
 $(function () {
     // Charts:
     function createChart(newChart) {

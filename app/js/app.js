@@ -5,6 +5,15 @@ function adminForm() {
   });
 }
 
+function userAdmin() {
+  $('#addUser').on('click', (e)=> {
+    e.preventDefault();
+    $('#newUser').toggleClass('active');
+    $('#addUser').toggleClass('hidden');
+    $('#saveUser').toggleClass('hidden');
+  });
+}
+
 $(()=> {
   // Charts:
   function createChart(newChart) {
