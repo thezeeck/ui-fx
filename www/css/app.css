@@ -111,6 +111,9 @@ header a {
   color: white;
   text-decoration: none; }
 
+.no-border {
+  border: 0 none !important; }
+
 .col-container {
   display: flex;
   flex-flow: wrap;
@@ -347,3 +350,7 @@ table {
       left: 2px;
       top: 2px;
       transition: all .3s linear; }
+
+#userProfile > .col {
+  padding: 0;
+  margin: 0; }

@@ -5,8 +5,8 @@ html
     div
       include ../jade/header.jade
       section.col-container
-        form
-          ul
+        form#userProfile.col.col-container.no-border
+          ul.col.no-border
             li
               label First Name
               input(type="text" value="Antonio")
@@ -26,5 +26,5 @@ html
             li
               label Confirm password
               input(type="password" placeholder="******")
-          .button-area
+          .button-area.col.no-border
             button Save
