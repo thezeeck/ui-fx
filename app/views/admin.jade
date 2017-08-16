@@ -4,8 +4,9 @@ html
   body
     div
       include ../jade/header.jade
-      section.col-container
-        form#userProfile.col.col-container.no-border
+      section.content-area
+        h1 Profile
+        form.form-responsive
           ul.col.no-border
             li
               label First Name
@@ -15,7 +16,15 @@ html
               input(type="text" value="Campa")
             li
               label e-Mail
-              input(type="mail" value="antonio.campa@example.com")
+              input(type="email" value="antonio.campa@example.com")
+            li
+              label Title
+              select
+                option(disabled) Select one
+                option Ms.
+                option Mrs.
+                option Dr.
+                option Mr.
             li
               label Password
               input(type="password" value="123456789")

@@ -4,6 +4,7 @@ body {
   background-color: $complement;
   margin: 0;
   font-family: $textFont-Light;
+  color: $complement-darker;
 
   *{
     box-sizing: border-box;
@@ -21,6 +22,16 @@ ul {
 
 .content {
     padding: 0 10px;
+}
+
+.content-area {
+  padding: 16px;
+  position: relative;
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: 30px;
+  }
 }
 
 header a {

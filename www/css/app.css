@@ -93,7 +93,8 @@ body {
   height: 100%;
   background-color: #F7F8FC;
   margin: 0;
-  font-family: "Avenir-Light"; }
+  font-family: "Avenir-Light";
+  color: #636363; }
   body * {
     box-sizing: border-box; }
 
@@ -106,6 +107,13 @@ ul {
 
 .content {
   padding: 0 10px; }
+
+.content-area {
+  padding: 16px;
+  position: relative; }
+  .content-area h1 {
+    margin: 0 0 16px;
+    font-size: 30px; }
 
 header a {
   color: white;
@@ -352,6 +360,44 @@ button {
   background: #178AB9;
   display: inline-block; }
 
-#userProfile > .col {
-  padding: 0;
-  margin: 0; }
+.form-responsive {
+  width: 100%; }
+  .form-responsive > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .form-responsive > ul > li {
+      width: 100%;
+      display: flex;
+      padding: 0 16px 16px; }
+      @media (min-width: 801px) {
+        .form-responsive > ul > li {
+          width: 50%; } }
+      @media (min-width: 1401px) {
+        .form-responsive > ul > li {
+          width: 33.333%; } }
+      .form-responsive > ul > li label {
+        width: 40%; }
+      .form-responsive > ul > li input {
+        width: 60%; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 4px 16px;
+  font-size: 14px;
+  font-family: "Avenir-Light";
+  border-radius: 4px;
+  border: 1px solid #DADBDF; }
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/chevron.png");
+  border: 1px solid #DADBDF;
+  border-radius: 5px;
+  padding: 3px 16px 5px;
+  font-size: 14px;
+  line-height: 12px; }
