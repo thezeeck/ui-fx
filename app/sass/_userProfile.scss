@@ -3,4 +3,10 @@
   opacity: 0;
   padding: 0;
   display: none;
+
+  &.active {
+    padding: 0 16px 16px;
+    display: flex;
+    opacity: 1;
+  }
 }

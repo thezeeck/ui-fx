@@ -43,16 +43,22 @@
 }
 
 button{
+  color: $secondary;
+  background: transparent;
   font-family: $textFont-Black;
   font-size: 14px;
-  color: $complement;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid $secondary;
-  width: 200px;
+  min-width: 200px;
   text-align: center;
   padding: 2px 0;
-  background: $secondary;
   display: inline-block;
+  min-height: 30px;
+
+  &.primary {
+    color: $complement;
+    background: $secondary;
+  }
 }
 
 .form-responsive {

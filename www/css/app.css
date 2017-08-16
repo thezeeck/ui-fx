@@ -91,7 +91,7 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #F7F8FC;
+  background-color: #F7F8F9;
   margin: 0;
   font-family: "Avenir-Light";
   color: #636363; }
@@ -124,6 +124,12 @@ header a {
 
 .hidden {
   display: none !important; }
+
+.button-area {
+  text-align: right;
+  margin-top: 32px;
+  padding: 16px;
+  background-color: rgba(99, 99, 99, 0.1); }
 
 .col-container {
   display: flex;
@@ -249,7 +255,7 @@ header {
 #logIn {
   max-width: 400px;
   padding: 10px;
-  background-color: #F7F8FC;
+  background-color: #F7F8F9;
   border-radius: 3px;
   border: 1px solid;
   border-color: #178AB9; }
@@ -338,7 +344,7 @@ table {
     display: inline-block;
     width: 28px;
     height: 16px;
-    background-color: #F7F8FC;
+    background-color: #F7F8F9;
     border: 1px solid #BFBFBF;
     border-radius: 8px;
     position: relative;
@@ -356,16 +362,20 @@ table {
       transition: all .3s linear; }
 
 button {
+  color: #178AB9;
+  background: transparent;
   font-family: "Avenir-Black";
   font-size: 14px;
-  color: #F7F8FC;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #178AB9;
-  width: 200px;
+  min-width: 200px;
   text-align: center;
   padding: 2px 0;
-  background: #178AB9;
-  display: inline-block; }
+  display: inline-block;
+  min-height: 30px; }
+  button.primary {
+    color: #F7F8F9;
+    background: #178AB9; }
 
 .form-responsive {
   width: 100%; }
@@ -417,3 +427,7 @@ select {
   opacity: 0;
   padding: 0;
   display: none; }
+  .form-responsive > ul > li.hidden-password.active {
+    padding: 0 16px 16px;
+    display: flex;
+    opacity: 1; }
