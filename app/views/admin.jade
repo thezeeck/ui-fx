@@ -20,7 +20,7 @@ html
             li
               label Title
               select
-                option(disabled) Select one
+                option(disabled selceted) Select one
                 option Ms.
                 option Mrs.
                 option Dr.
@@ -28,11 +28,12 @@ html
             li
               label Password
               input(type="password" value="123456789")
-              button Change password
             li
+              button Change password
+            li.hidden
               label New Password
               input(type="password" placeholder="******")
-            li
+            li.hidden
               label Confirm password
               input(type="password" placeholder="******")
           .button-area.col.no-border
