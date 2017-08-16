@@ -48,7 +48,8 @@
   }
 }
 
-button{
+button,
+.button {
   color: $secondary;
   background: transparent;
   font-family: $textFont-Black;
@@ -60,6 +61,8 @@ button{
   padding: 2px 0;
   display: inline-block;
   min-height: 30px;
+  text-decoration: none;
+  line-height: 24px;
 
   &.primary {
     color: $complement;

@@ -385,7 +385,8 @@ table {
   .extendedCheckbox span {
     vertical-align: middle; }
 
-button {
+button,
+.button {
   color: #41769C;
   background: transparent;
   font-family: "Avenir-Black";
@@ -396,8 +397,11 @@ button {
   text-align: center;
   padding: 2px 0;
   display: inline-block;
-  min-height: 30px; }
-  button.primary {
+  min-height: 30px;
+  text-decoration: none;
+  line-height: 24px; }
+  button.primary,
+  .button.primary {
     color: #F7F8F9;
     background: #41769C; }
 
