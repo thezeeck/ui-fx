@@ -87,7 +87,7 @@ function logsAplicative(newChart) {
           max: 100
       },
       categoryAxis: {
-          categories: ["50s.", "40s.", "30s.", "20s.", "10s.", "0s."],
+          categories: ["02hrs.", "04hrs.", "06hrs.", "08hrs.", "10hrs.", "12hrs."],
           majorGridLines: {
               visible: false
           },
