@@ -1,0 +1,30 @@
+doctype html
+html
+  include ../jade/head.jade
+  body
+    div
+      include ../jade/header.jade
+      section.col-container
+        form
+          ul
+            li
+              label First Name
+              input(type="text" value="Antonio")
+            li
+              label Last Name
+              input(type="text" value="Campa")
+            li
+              label e-Mail
+              input(type="mail" value="antonio.campa@example.com")
+            li
+              label Password
+              input(type="password" value="123456789")
+              button Change password
+            li
+              label New Password
+              input(type="password" placeholder="******")
+            li
+              label Confirm password
+              input(type="password" placeholder="******")
+          .button-area
+            button Save

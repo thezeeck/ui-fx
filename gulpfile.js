@@ -68,14 +68,6 @@ gulp.task('build:sections', function() {
     .pipe(gulp.dest(config.jade.viewsOuput));
 });
 
-gulp.task('build:controllers', function() {
-	return gulp.src(config.js.controller)
-		.pipe(babel({
-			presets: ['es2015']
-		}))
-		.pipe(gulp.dest(config.js.controllerOut));
-});
-
 gulp.task('watch', function() {
   gulp.watch(config.js.watch, ['build:js']);
   gulp.watch(config.style.watch, ['build:css']);
