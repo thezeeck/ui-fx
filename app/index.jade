@@ -43,7 +43,57 @@ html
           div.col-container
             section.col
               div.demo-section.k-content.wide
-                div#chartProcesor
+                div#chartAplicative
               img(src="img/chartAlert.png" alt="")
             
     script(type="text/javascript" src="js/app.js")
+    script.
+      $(function() {
+        createChart({
+          title: "PC use in %",
+          data: [{
+              name: "Use",
+              data: [40, 50, 30, 80, 95, 20],
+              color: "#90E6D4"
+          }],
+          node: $('#chartProcesor')
+        });
+      
+        createChart({
+          title: "MEMORY use in %",
+          data: [{
+              name: "Use",
+              data: [39, 54, 90, 60, 55, 10],
+              color: "#197C68"
+          }],
+          node: $('#chartMemory')
+        });
+        
+        logsAplicative({
+          title: "Use in %",
+          data: [{
+              name: "Get Rate",
+              data: [20, 6, 30, 65, 12, 10],
+              color: "red"
+          },
+          {
+              name: "Create Web Orders",
+              data: [30, 20, 3, 5, 43, 10],
+              color: "blue"
+          },
+          {
+              name: "Post Web Orders",
+              data: [5, 20, 15, 10, 5, 10],
+              color: "yellow"
+          },
+          {
+              name: "Finalize Payments",
+              data: [12, 25, 10, 5, 20, 10],
+              color: "green"
+          }
+        ],
+          node: $('#chartAplicative')
+        });
+      });
+      
+      //- createGauge();
