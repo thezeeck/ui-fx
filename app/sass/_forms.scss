@@ -96,7 +96,7 @@ button,
       }
 
       input,
-      ul {
+      ul:not(.k-slider-items) {
         width: 60%;
 
         .extendedCheckbox {

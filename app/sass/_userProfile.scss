@@ -47,10 +47,16 @@
 
   dt {
     width: 20%;
+    padding: 0 16px;
   }
 
   dd {
     width: 30%;
     margin: 0;
+    padding: 0 16px;
   }
+}
+
+div.balSlider {
+  width: 100%;
 }

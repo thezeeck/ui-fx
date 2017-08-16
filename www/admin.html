@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="js/kendoui/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="js/kendoui/styles/kendo.common-material.min.css">
+    <link rel="stylesheet" href="js/kendoui/styles/kendo.material.min.css">
     <script src="js/kendoui/js/jquery.min.js"></script>
     <script src="js/kendoui/js/kendo.all.min.js"></script>
   </head>
@@ -86,11 +88,11 @@
               <dl class="col no-border config-alert">
                 <dt>CPU Alert</dt>
                 <dd>
-                  <input type="range" min="0" max="100" step="5">
+                  <input id="slider" value="0" title="slider" class="balSlider">
                 </dd>
                 <dt>Memory Alert</dt>
                 <dd>
-                  <input type="range" min="0" max="100" step="5">
+                  <input id="slider2" value="0" title="slider" class="balSlider">
                 </dd>
               </dl>
             </li>
@@ -102,6 +104,12 @@
       </section>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
-    <script>$(()=> {adminForm();})</script>
+    <script>
+      $(()=> {
+        adminForm();
+        sliderContructor($('#slider'));
+        sliderContructor($('#slider2'));
+      });
+    </script>
   </body>
 </html>

@@ -426,10 +426,10 @@ button,
       .form-responsive > ul > li span {
         width: 40%; }
       .form-responsive > ul > li input,
-      .form-responsive > ul > li ul {
+      .form-responsive > ul > li ul:not(.k-slider-items) {
         width: 60%; }
         .form-responsive > ul > li input .extendedCheckbox,
-        .form-responsive > ul > li ul .extendedCheckbox {
+        .form-responsive > ul > li ul:not(.k-slider-items) .extendedCheckbox {
           width: 100%; }
 
 .button-area {
@@ -493,7 +493,12 @@ select {
 .config-alert {
   display: flex; }
   .config-alert dt {
-    width: 20%; }
+    width: 20%;
+    padding: 0 16px; }
   .config-alert dd {
     width: 30%;
-    margin: 0; }
+    margin: 0;
+    padding: 0 16px; }
+
+div.balSlider {
+  width: 100%; }

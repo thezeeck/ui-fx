@@ -41,13 +41,17 @@ html
               dl.col.no-border.config-alert
                 dt CPU Alert
                 dd
-                  input(type="range" min="0" max="100" step="5")
+                  input(id="slider" class="balSlider" value="0" title="slider")
                 dt Memory Alert
                 dd
-                  input(type="range" min="0" max="100" step="5")
+                  input(id="slider2" class="balSlider" value="0" title="slider")
           .button-area.col.no-border
             button.primary Save
     script(type="text/javascript" src="js/app.js")
     script.
-      $(()=> {adminForm();})
+      $(()=> {
+        adminForm();
+        sliderContructor($('#slider'));
+        sliderContructor($('#slider2'));
+      });
       

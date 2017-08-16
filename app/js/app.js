@@ -14,6 +14,17 @@ function userAdmin() {
   });
 }
 
+function sliderContructor(node) {
+  node.kendoSlider({
+      increaseButtonTitle: "Right",
+      decreaseButtonTitle: "Left",
+      min: 0,
+      max: 100,
+      smallStep: 5,
+      largeStep: 25
+  }).data("kendoSlider");
+}
+
 function createChart(newChart) {
   newChart.node.kendoChart({
       title: {
