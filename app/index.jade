@@ -21,7 +21,10 @@ html
           div.content
             table
               colgroup
-                col(style="width: 30%")
+                col(style="width: 25%")
+                col(style="width: 25%")
+                col(style="width: 25%")
+                col(style="width: 25%")
               thead
                 tr
                   th IP address
@@ -36,20 +39,24 @@ html
                   td Status
         div.col
           h4 Aplicative Logs
-          div.content
-            table
-              colgroup
-                col(style="width: 30%")
-              thead
-                tr
-                  th IP address
-                  th Date
-                  th Time
-                  th Status
-              tbody
-              tr
-                td 00.000.00.00
-                td MM/DD/YYYY
-                td HH:MM:SS
-                td Status
+          .content
+            #chartProcesor
+            //- table
+            //-   colgroup
+            //-     col(style="width: 25%")
+            //-     col(style="width: 25%")
+            //-     col(style="width: 25%")
+            //-     col(style="width: 25%")
+            //-   thead
+            //-     tr
+            //-       th IP address
+            //-       th Date
+            //-       th Time
+            //-       th Status
+            //-   tbody
+            //-   tr
+            //-     td 00.000.00.00
+            //-     td MM/DD/YYYY
+            //-     td HH:MM:SS
+            //-     td Status
     script(type="text/javascript" src="js/app.js")
