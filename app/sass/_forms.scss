@@ -92,6 +92,13 @@ button{
   }
 }
 
+.button-area {
+  text-align: right;
+  margin-top: 32px;
+  padding: 16px;
+  background-color: rgba($complement-darker,.04);
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"] {

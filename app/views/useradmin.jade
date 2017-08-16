@@ -4,3 +4,51 @@ html
   body
     div
       include ../jade/header.jade
+      section.content-area
+        h1 Users
+        section.col-container
+          div.col
+            h4.table-header User admin
+            div.col-container
+              table
+                colgroup
+                  col(style="width: 25%")
+                  col(style="width: 25%")
+                  col(style="width: 25%")
+                  col(style="width: 20%")
+                  col(style="width: 5%")
+                thead
+                  tr
+                    th Name
+                    th E-mail
+                    th Permissions
+                    th
+                    th
+                tbody
+                  - for (var i = 0; i < 5; i++) {
+                    tr
+                      td Name Surname
+                      td namesurname@domain.com
+                      td
+                        ul.options
+                          li
+                            label.extendedCheckbox
+                              input(type="checkbox" name="displayDashboard" value="")
+                              span.box
+                              span CPU Monitor
+                          li
+                            label.extendedCheckbox
+                              input(type="checkbox" name="displayDashboard" value="")
+                              span.box
+                              span Bluemix logs
+                          li
+                            label.extendedCheckbox
+                              input(type="checkbox" name="displayDashboard" value="")
+                              span.box
+                              span Applicative logs
+                      td
+                        span.margin-right Rebuild password
+                        i(class="fa fa-refresh" aria-hidden="true")
+                      td.text-center
+                        i(class="fa fa-trash" aria-hidden="true")
+                  - }
