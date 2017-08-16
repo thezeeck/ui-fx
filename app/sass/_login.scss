@@ -9,6 +9,7 @@
   figure {
     text-align: center;
     margin-top: 0;
+
     img{
       width: 250px;
     }
@@ -38,6 +39,10 @@
       }
     }
   }
+
+  button{
+    margin: 10px;
+  }
 }
 
 .appContent {
@@ -61,22 +66,6 @@
   color: $secondary;
   text-align: center;
   margin: 10px 0;
-}
-
-button{
-  font-family: $textFont;
-  font-weight: bold;
-  font-size: 12px;
-  color: $complement;
-  border-radius: 3px;
-  border: 1px solid $secondary;
-  height: 24px;
-  width: 200px;
-  text-align: center;
-  margin: 10px;
-  padding: 2px 0;
-  background: $secondary;
-  display: inline-block;
 }
 
 a {
