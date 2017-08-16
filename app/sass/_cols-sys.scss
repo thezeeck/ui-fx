@@ -1,12 +1,10 @@
 .col-container {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
-  padding: 0 8px;
 
   .col {
     width: calc(100% - 16px);
-    margin: 0 8px 16px;
+    margin: 8px 8px 16px;
     border: 1px solid $secondary;
     border-radius: 5px;
     position: relative;

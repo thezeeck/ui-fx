@@ -4,8 +4,9 @@ html
   body
     div
       include jade/header.jade
-      section.col-container
-        div.col 
+      section.content-area.col-container
+        h1 Dashboard
+        div.col
           h4 Monitoring CPU/MEMORY
           div.col-container
             section.col.col-2
@@ -38,25 +39,11 @@ html
                   td HH:MM:SS
                   td Status
         div.col
-          h4 Aplicative Logs
-          .content
-            #chartProcesor
-            //- table
-            //-   colgroup
-            //-     col(style="width: 25%")
-            //-     col(style="width: 25%")
-            //-     col(style="width: 25%")
-            //-     col(style="width: 25%")
-            //-   thead
-            //-     tr
-            //-       th IP address
-            //-       th Date
-            //-       th Time
-            //-       th Status
-            //-   tbody
-            //-   tr
-            //-     td 00.000.00.00
-            //-     td MM/DD/YYYY
-            //-     td HH:MM:SS
-            //-     td Status
+          h4 Monitoring Aplicative Logs
+          div.col-container
+            section.col
+              div.demo-section.k-content.wide
+                div#chartProcesor
+              img(src="img/chartAlert.png" alt="")
+            
     script(type="text/javascript" src="js/app.js")
