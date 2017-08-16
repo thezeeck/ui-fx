@@ -3,18 +3,18 @@ html
   include ../jade/head.jade
   body
     div.appContent
-    section#logIn
-      figure
-        img#logoLogin(src="img/anova_color.png" alt="")
-      div.titleLogin
-        i.fa.fa-sign-in Enter the data to log in
-        form
-          ul
-            li
-              input(type="text" name="username" value="" placeholder="Username")
-            li
-              input(type="text" name="password" value="" placeholder="Password")
-            li
-              button(type="submit" name="button") Send
-        div(class="textLogin")
-          a(href="#") Forgot your password?
+      section#logIn
+        figure
+          img#logoLogin(src="img/anova_color.png" alt="")
+        div.titleLogin
+          i.fa.fa-sign-in  Enter data to login
+          form
+            ul
+              li
+                input(type="text" name="username" value="" placeholder="Username")
+              li
+                input(type="text" name="password" value="" placeholder="Password")
+              li
+                button(type="submit" name="button") Send
+          div(class="textLogin")
+            a(href="#") Forgot your password?
