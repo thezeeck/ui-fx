@@ -51,8 +51,6 @@ header {
   }
 
   .secondHead {
-    text-align: right;
-
     h5 {
       width: 100%;
       color: white;
@@ -71,7 +69,7 @@ header {
       .usercircle
         .fa.fa-user-circle {
           position: relative;
-
+          display: none;
         }
 
       .fa.fa-envelope {
