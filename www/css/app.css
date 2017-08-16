@@ -147,7 +147,8 @@ header a {
   z-index: -1; }
 
 header {
-  width: 100%;
+  max-width: 100%;
+  max-height: 72px;
   margin: 0;
   padding: 0 16px;
   background-color: #197C68; }
@@ -155,87 +156,88 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    list-style: none; }
+    list-style: none;
+    align-self: stretch; }
     header ul li {
       display: flex;
       align-items: center;
       color: white; }
       header ul li:first-child {
-        width: 100px;
-        font-size: 16px;
-        font-weight: bold;
+        max-width: 250px;
         color: white; }
       header ul li:not(:first-child) {
-        max-width: 100px;
+        max-width: 250px;
         text-align: right;
         line-height: 0;
         padding-left: 16px; }
       header ul li.notif {
-        width: 200px;
-        max-width: 500px;
+        max-width: 250px;
         position: relative; }
       header ul li img {
-        width: auto;
+        width: 72px;
         height: auto;
         max-width: 100%;
         max-height: 100%; }
-  header .secondHead h5 {
-    width: 100%;
-    color: white;
-    text-align: right;
-    margin: 0;
-    font-size: 16px;
-    padding: 8px 0; }
-    header .secondHead h5:hover + #notificationsContainer {
-      transform: translate(0px);
-      opacity: 1;
-      padding: 8px;
-      height: auto;
-      overflow: visible; }
-    header .secondHead h5 .fa.fa-user-circle {
-      display: none; }
-    header .secondHead h5 .fa.fa-envelope {
-      position: relative; }
-    header .secondHead h5 .fa::after {
-      content: "\f06a";
-      position: absolute;
-      left: -8px;
-      top: -5px;
-      width: 10px;
-      height: 10px;
-      color: #FEC52E; }
-    header .secondHead h5 .fa-envelope::before {
-      content: "\f0e0"; }
-  header .secondHead #notificationsContainer {
-    background-color: #BFBFBF;
-    width: 100%;
-    height: 0;
-    position: absolute;
-    padding: 0;
-    right: -4px;
-    top: 36px;
-    z-index: 999;
-    transition: all .3s ease;
-    transform: translate(0px, -20px);
-    opacity: 0;
-    overflow: hidden;
-    line-height: 12px; }
-    header .secondHead #notificationsContainer:hover {
-      transform: translate(0px);
-      opacity: 1;
-      padding: 8px;
-      height: auto;
-      overflow: visible; }
-    header .secondHead #notificationsContainer::before {
-      content: '';
-      position: absolute;
-      right: 12px;
-      top: -6px;
+  header .secondHead {
+    text-align: right; }
+    header .secondHead h5 {
+      width: 100%;
+      color: white;
+      text-align: rigth;
+      margin: 0;
+      font-size: 16px;
+      padding: 8px 0; }
+      header .secondHead h5:hover + #notificationsContainer {
+        transform: translate(0px);
+        opacity: 1;
+        padding: 8px;
+        height: auto;
+        overflow: visible; }
+      header .secondHead h5 .usercircle
+.fa.fa-user-circle {
+        position: relative; }
+      header .secondHead h5 .fa.fa-envelope {
+        position: relative; }
+      header .secondHead h5 .fa::after {
+        content: "\f06a";
+        position: absolute;
+        left: -8px;
+        top: -5px;
+        width: 10px;
+        height: 10px;
+        color: #FEC52E; }
+      header .secondHead h5 .fa-envelope::before {
+        content: "\f0e0"; }
+    header .secondHead #notificationsContainer {
+      background-color: #BFBFBF;
+      width: 100%;
       height: 0;
-      width: 0;
-      border-width: 0 6px 6px 6px;
-      border-color: transparent transparent #BFBFBF;
-      border-style: solid; }
+      position: absolute;
+      padding: 0;
+      right: -4px;
+      top: 36px;
+      z-index: 999;
+      transition: all .3s ease;
+      transform: translate(0px, -20px);
+      opacity: 0;
+      overflow: hidden;
+      line-height: 12px; }
+      header .secondHead #notificationsContainer:hover {
+        transform: translate(0px);
+        opacity: 1;
+        padding: 8px;
+        height: auto;
+        overflow: visible; }
+      header .secondHead #notificationsContainer::before {
+        content: '';
+        position: absolute;
+        right: 12px;
+        top: -6px;
+        height: 0;
+        width: 0;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent #BFBFBF;
+        border-style: solid; }
 
 #logIn {
   max-width: 400px;
