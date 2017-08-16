@@ -73,9 +73,8 @@ gulp.task('watch', function() {
   gulp.watch(config.style.watch, ['build:css']);
   gulp.watch(config.jade.watch, ['build:jade']);
   gulp.watch(config.jade.views, ['build:sections']);
-  gulp.watch(config.js.controller, ['build:controllers']);
 });
 
-gulp.task('build', ['build:css', 'build:js', 'build:jade', 'build:sections', 'build:controllers'])
+gulp.task('build', ['build:css', 'build:js', 'build:jade', 'build:sections'])
 
 gulp.task('default', ['server', 'watch', 'build']);
