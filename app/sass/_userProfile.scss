@@ -1,1 +1,6 @@
-
+.form-responsive > ul > li.hidden-password {
+  transition: all .3s linear;
+  opacity: 0;
+  padding: 0;
+  display: none;
+}

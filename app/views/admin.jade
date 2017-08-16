@@ -29,12 +29,16 @@ html
               label Password
               input(type="password" value="123456789")
             li
-              button Change password
-            li.hidden
+              button#passwordChange Change password
+            li.hidden-password
               label New Password
               input(type="password" placeholder="******")
-            li.hidden
+            li.hidden-password
               label Confirm password
               input(type="password" placeholder="******")
           .button-area.col.no-border
             button Save
+    script(type="text/javascript" src="js/app.js")
+    script.
+      $(()=> {adminForm();})
+      
