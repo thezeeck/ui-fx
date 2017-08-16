@@ -1,3 +1,10 @@
+function adminForm() {
+  $('#passwordChange').on('click', (e)=> {
+    e.preventDefault();
+    $('.hidden-password').toggleClass('active');
+  });
+}
+
 $(()=> {
   // Charts:
   function createChart(newChart) {

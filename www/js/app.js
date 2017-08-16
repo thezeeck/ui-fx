@@ -1,4 +1,11 @@
-"use strict";
+'use strict';
+
+function adminForm() {
+    $('#passwordChange').on('click', function (e) {
+        e.preventDefault();
+        $('.hidden-password').toggleClass('active');
+    });
+}
 
 $(function () {
     // Charts:
